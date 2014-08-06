@@ -3,6 +3,7 @@ require(['./config'], function (config) {
     require(['../lib/jquery.min']);
     require(['../lib/angular.min']);
     require(['../lib/bootstrap.min']);
+    require(['../lib/meny']);
     require(['../lib/retina.min']);
 
     require(['app/home']);

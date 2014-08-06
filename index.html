@@ -2,50 +2,71 @@
 <html>
 <head>
     <!--meta set-->
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
     <meta name="generator" content="Tg31"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="HandheldFriendly"content="true"/>
-    <meta name="MobileOptimized"content="320"/>
-    <link rel="shortcut icon" href="images/favicon.png" />
-    <link rel="apple-touch-icon" href="images/logo72x72.png" />
-    <link rel="apple-touch-icon" sizes="72x72" href="images/logo72x72.png" />
-    <link rel="apple-touch-icon" sizes="114x114" href="images/logo114x114.png" />
-    <link rel="apple-touch-startup-image" href="./images/startup.png" />
-    <link rel="apple-touch-startup-image" href="./images/startup@2x.png" media="only screen and (-webkit-min-device-pixel-ratio: 1.5)"/>
-
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="MobileOptimized" content="320"/>
+    <link rel="shortcut icon" href="images/favicon.png"/>
+    <link rel="apple-touch-icon" href="images/logo72x72.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="images/logo72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="images/logo114x114.png"/>
+    <link rel="apple-touch-startup-image" href="./images/startup.png"/>
+    <link rel="apple-touch-startup-image" href="./images/startup@2x.png"
+          media="only screen and (-webkit-min-device-pixel-ratio: 1.5)"/>
     <title>Tg31 - Too Good</title>
     <!--style set-->
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/bootstrap-theme.css">
     <!--optional-->
     <link rel="stylesheet" href="css/font-awesome.css">
-
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
+
+<!-- meny nav -->
+<div class="meny">
+    <h2>More Experiments</h2>
+    <ul>
+        <li><a href="http://lab.hakim.se/avgrund/">Avgrund</a></li>
+        <li><a href="http://lab.hakim.se/radar/">Radar</a></li>
+        <li><a href="http://lab.hakim.se/forkit-js/">forkit.js</a></li>
+        <li><a href="http://lab.hakim.se/scroll-effects/">stroll.js</a></li>
+        <li><a href="http://lab.hakim.se/zoom-js">zoom.js</a></li>
+        <li><a href="http://lab.hakim.se/reveal-js">reveal.js</a></li>
+        <li><a href="http://itunes.apple.com/us/app/sinuous/id543097218">Sinuous for iOS</a></li>
+        <li><a href="http://hakim.se/experiments/css/domtree/">DOM Tree</a></li>
+        <li><a href="http://hakim.se/experiments/css/holobox/">Holobox</a></li>
+        <li><a href="http://hakim.se/experiments/html5/404/netmag.html">404</a></li>
+    </ul>
+</div>
+<!--div class="meny-arrow"></div-->
+<!-- /meny nav -->
 <div class="wrapper">
 <div class="box">
 <div class="row row-offcanvas row-offcanvas-right">
 <!-- sidebar -->
 <div class="column col-sm-2 col-xs-1 sidebar-offcanvas hide" id="sidebar">
-
     <ul class="nav visible-xs" id="lg-menu">
-        <li><form class="navbar-form navbar-left">
-            <div class="input-group input-group-sm" style="max-width:360px;">
-                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
-                <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-                </div>
-            </div>
-        </form>
-        </li>
         <li>
-            <a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i> Post</a>
+            <form class="navbar-form navbar-left">
+                <div class="input-group input-group-sm" style="max-width:360px;">
+                    <input type="text" class="form-control" placeholder="Search" name="srch-term"
+                           id="srch-term">
+
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit"><i
+                                class="glyphicon glyphicon-search"></i></button>
+                    </div>
+                </div>
+            </form>
         </li>
-        <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a></li>
+        <li><a href="#postModal" role="button" data-toggle="modal"><i class="glyphicon glyphicon-plus"></i>
+            Post</a></li>
+        <li class="active"><a href="#featured"><i class="glyphicon glyphicon-list-alt"></i> Featured</a>
+        </li>
         <li><a href="#stories"><i class="glyphicon glyphicon-list"></i> Stories</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-paperclip"></i> Saved</a></li>
         <li><a href="#"><i class="glyphicon glyphicon-refresh"></i> Refresh</a></li>
@@ -54,198 +75,198 @@
 <!-- /sidebar -->
 <!-- main right col -->
 <div class="column col-sm-12 col-xs-12" id="main">
-<!-- top nav -->
-<div class="navbar navbar-color navbar-fixed-top">
-    <div class="navbar-header">
-        <button  data-toggle="offcanvas"  class="navbar-toggle" type="button">
-            <span class="sr-only">Toggle</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-        <a href="#home" class="visible-xs text-center navbar-brand"><img src="images/logo.png" height="30" /> </a>
+    <!-- top nav -->
+    <div class="navbar navbar-color navbar-fixed-top">
+        <div class="navbar-header">
+            <button data-toggle="offcanvas" class="navbar-toggle" type="button"><span
+                    class="sr-only">Toggle</span> <span class="icon-bar"></span> <span
+                    class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <a href="#home" class="visible-xs text-center navbar-brand"><img src="images/logo.png"
+                                                                             height="30"/> </a></div>
+        <!--TODO: nav for desktop-->
     </div>
-    <!--TODO: nav for desktop-->
-</div>
-<!-- /top nav -->
-<div class="padding">
-    <div id="canvas" class="full col-sm-9">
-        <!-- content -->
-        <div class="row">
-            <!-- main col left -->
-            <div class="col-sm-5">
-                <div class="panel panel-default">
-                    <div class="panel-thumbnail">
-                        <img src="/assets/example/bg_5.jpg" class="img-responsive">
-                    </div>
-                    <div class="panel-body">
-                        <p class="lead">
-                            Urbanization
-                        </p>
-                        <p>
-                            45 Followers, 13 Posts
-                        </p>
-                        <p>
-                            <img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28" width="28px" height="28px">
-                        </p>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="#" class="pull-right">View all</a>
-                        <h4>Bootstrap Examples</h4>
-                    </div>
-                    <div class="panel-body">
-                        <div class="list-group">
-                            <a href="http://bootply.com/tagged/modal" class="list-group-item">Modal / Dialog</a>
-                            <a href="http://bootply.com/tagged/datetime" class="list-group-item">Datetime Examples</a>
-                            <a href="http://bootply.com/tagged/datatable" class="list-group-item">Data Grids</a>
+    <!-- /top nav -->
+    <div class="padding">
+        <div id="canvas" class="full col-sm-9">
+            <!-- content -->
+            <div class="row">
+                <!-- main col left -->
+                <div class="col-sm-5">
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail"><img src="/assets/example/bg_5.jpg"
+                                                          class="img-responsive"></div>
+                        <div class="panel-body">
+                            <p class="lead"> Urbanization </p>
+
+                            <p> 45 Followers, 13 Posts </p>
+
+                            <p><img src="https://lh3.googleusercontent.com/uFp_tsTJboUY7kue5XAsGA=s28"
+                                    width="28px" height="28px"></p>
                         </div>
                     </div>
-                </div>
-                <div class="well">
-                    <form class="form-horizontal" role="form">
-                        <h4>What's New</h4>
-                        <div class="form-group" style="padding:14px;">
-                            <textarea class="form-control" placeholder="Update your status"></textarea>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><a href="#" class="pull-right">View all</a>
+                            <h4>Bootstrap Examples</h4>
                         </div>
-                        <button class="btn btn-primary pull-right" type="button">Post</button>
-                        <ul class="list-inline">
-                            <li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
-                            <li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
-                            <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li>
-                        </ul>
-                    </form>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="#" class="pull-right">View all</a>
-                        <h4>More Templates</h4>
-                    </div>
-                    <div class="panel-body">
-                        <img src="//placehold.it/150x150" class="img-circle pull-right"><a href="#">Free @Bootply</a>
-                        <div class="clearfix">
+                        <div class="panel-body">
+                            <div class="list-group"><a href="http://bootply.com/tagged/modal"
+                                                       class="list-group-item">Modal / Dialog</a> <a
+                                    href="http://bootply.com/tagged/datetime" class="list-group-item">Datetime
+                                Examples</a> <a href="http://bootply.com/tagged/datatable"
+                                                class="list-group-item">Data Grids</a></div>
                         </div>
-                        There a load of new free Bootstrap 3 ready templates at Bootply. All of these templates are free and don't require extensive customization to the Bootstrap baseline.
-                        <hr>
-                        <ul class="list-unstyled">
-                            <li><a href="http://www.bootply.com/templates">Dashboard</a></li>
-                            <li><a href="http://www.bootply.com/templates">Darkside</a></li>
-                            <li><a href="http://www.bootply.com/templates">Greenfield</a></li>
-                        </ul>
                     </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h4>What Is Bootstrap?</h4>
-                    </div>
-                    <div class="panel-body">
-                        Bootstrap is front end frameworkto build custom web applications that are fast, responsive &amp; intuitive. It consist of CSS and HTML for typography, forms, buttons, tables, grids, and navigation along with custom-built jQuery plug-ins and support for responsive layouts. With dozens of reusable components for navigation, pagination, labels, alerts etc..
-                    </div>
-                </div>
-            </div>
-            <!-- main col right -->
-            <div class="col-sm-7">
-                <div class="well">
-                    <form class="form">
-                        <h4>Sign-up</h4>
-                        <div class="input-group text-center">
-                            <input type="text" class="form-control input-lg" placeholder="Enter your email address">
-                            <span class="input-group-btn"><button class="btn btn-lg btn-primary" type="button">OK</button></span>
-                        </div>
-                    </form>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="#" class="pull-right">View all</a>
-                        <h4>Bootply Editor &amp; Code Library</h4>
-                    </div>
-                    <div class="panel-body">
-                        <p>
-                            <img src="//placehold.it/150x150" class="img-circle pull-right"><a href="#">The Bootstrap Playground</a>
-                        </p>
-                        <div class="clearfix">
-                        </div>
-                        <hr>
-                        Design, build, test, and prototype using Bootstrap in real-time from your Web browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with the benefits of responsive design using Bootstrap. Find and showcase Bootstrap-ready snippets in the 100% free Bootply.com code repository.
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="#" class="pull-right">View all</a>
-                        <h4>Stackoverflow</h4>
-                    </div>
-                    <div class="panel-body">
-                        <img src="//placehold.it/150x150" class="img-circle pull-right"><a href="#">Keyword: Bootstrap</a>
-                        <div class="clearfix">
-                        </div>
-                        <hr>
-                        <p>
-                            If you're looking for help with Bootstrap code, the <code>twitter-bootstrap</code> tag at <a href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a> is a good place to find answers.
-                        </p>
-                        <hr>
-                        <form>
-                            <div class="input-group">
-                                <div class="input-group-btn">
-                                    <button class="btn btn-default">+1</button><button class="btn btn-default"><i class="glyphicon glyphicon-share"></i></button>
-                                </div>
-                                <input type="text" class="form-control" placeholder="Add a comment..">
+                    <div class="well">
+                        <form class="form-horizontal" role="form">
+                            <h4>What's New</h4>
+
+                            <div class="form-group" style="padding:14px;">
+                                <textarea class="form-control" placeholder="Update your status"></textarea>
                             </div>
+                            <button class="btn btn-primary pull-right" type="button">Post</button>
+                            <ul class="list-inline">
+                                <li><a href=""><i class="glyphicon glyphicon-upload"></i></a></li>
+                                <li><a href=""><i class="glyphicon glyphicon-camera"></i></a></li>
+                                <li><a href=""><i class="glyphicon glyphicon-map-marker"></i></a></li>
+                            </ul>
                         </form>
                     </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <a href="#" class="pull-right">View all</a>
-                        <h4>Portlet Heading</h4>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="list-group">
-                            <li class="list-group-item">Modals</li>
-                            <li class="list-group-item">Sliders / Carousel</li>
-                            <li class="list-group-item">Thumbnails</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="panel panel-default">
-                    <div class="panel-thumbnail">
-                        <img src="/assets/example/bg_4.jpg" class="img-responsive">
-                    </div>
-                    <div class="panel-body">
-                        <p class="lead">
-                            Social Good
-                        </p>
-                        <p>
-                            1,200 Followers, 83 Posts
-                        </p>
-                        <p>
-                            <img src="https://lh6.googleusercontent.com/-5cTTMHjjnzs/AAAAAAAAAAI/AAAAAAAAAFk/vgza68M4p2s/s28-c-k-no/photo.jpg" width="28px" height="28px">
-                            <img src="https://lh4.googleusercontent.com/-6aFMDiaLg5M/AAAAAAAAAAI/AAAAAAAABdM/XjnG8z60Ug0/s28-c-k-no/photo.jpg" width="28px" height="28px">
-                            <img src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg" width="28px" height="28px">
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><a href="#" class="pull-right">View all</a>
+                            <h4>More Templates</h4>
+                        </div>
+                        <div class="panel-body"><img src="//placehold.it/150x150"
+                                                     class="img-circle pull-right"><a href="#">Free
+                            @Bootply</a>
 
-        <div class="row" id="footer">
-            <div class="col-sm-6">
+                            <div class="clearfix"></div>
+                            There a load of new free Bootstrap 3 ready templates at Bootply. All of these
+                            templates are free and don't require extensive customization to the Bootstrap
+                            baseline.
+                            <hr>
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.bootply.com/templates">Dashboard</a></li>
+                                <li><a href="http://www.bootply.com/templates">Darkside</a></li>
+                                <li><a href="http://www.bootply.com/templates">Greenfield</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4>What Is Bootstrap?</h4>
+                        </div>
+                        <div class="panel-body"> Bootstrap is front end frameworkto build custom web
+                            applications that are fast, responsive &amp; intuitive. It consist of CSS and
+                            HTML for typography, forms, buttons, tables, grids, and navigation along with
+                            custom-built jQuery plug-ins and support for responsive layouts. With dozens of
+                            reusable components for navigation, pagination, labels, alerts etc..
+                        </div>
+                    </div>
+                </div>
+                <!-- main col right -->
+                <div class="col-sm-7">
+                    <div class="well">
+                        <form class="form">
+                            <h4>Sign-up</h4>
+
+                            <div class="input-group text-center">
+                                <input type="text" class="form-control input-lg"
+                                       placeholder="Enter your email address">
+                      <span class="input-group-btn">
+                      <button class="btn btn-lg btn-primary" type="button">OK</button>
+                      </span></div>
+                        </form>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><a href="#" class="pull-right">View all</a>
+                            <h4>Bootply Editor &amp; Code Library</h4>
+                        </div>
+                        <div class="panel-body">
+                            <p><img src="//placehold.it/150x150" class="img-circle pull-right"><a href="#">The
+                                Bootstrap Playground</a></p>
+
+                            <div class="clearfix"></div>
+                            <hr>
+                            Design, build, test, and prototype using Bootstrap in real-time from your Web
+                            browser. Bootply combines the power of hand-coded HTML, CSS and JavaScript with
+                            the benefits of responsive design using Bootstrap. Find and showcase
+                            Bootstrap-ready snippets in the 100% free Bootply.com code repository.
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><a href="#" class="pull-right">View all</a>
+                            <h4>Stackoverflow</h4>
+                        </div>
+                        <div class="panel-body"><img src="//placehold.it/150x150"
+                                                     class="img-circle pull-right"><a href="#">Keyword:
+                            Bootstrap</a>
+
+                            <div class="clearfix"></div>
+                            <hr>
+                            <p> If you're looking for help with Bootstrap code, the
+                                <code>twitter-bootstrap</code> tag at <a
+                                        href="http://stackoverflow.com/questions/tagged/twitter-bootstrap">Stackoverflow</a>
+                                is a good place to find answers. </p>
+                            <hr>
+                            <form>
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-default">+1</button>
+                                        <button class="btn btn-default"><i
+                                                class="glyphicon glyphicon-share"></i></button>
+                                    </div>
+                                    <input type="text" class="form-control" placeholder="Add a comment..">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading"><a href="#" class="pull-right">View all</a>
+                            <h4>Portlet Heading</h4>
+                        </div>
+                        <div class="panel-body">
+                            <ul class="list-group">
+                                <li class="list-group-item">Modals</li>
+                                <li class="list-group-item">Sliders / Carousel</li>
+                                <li class="list-group-item">Thumbnails</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-thumbnail"><img src="/assets/example/bg_4.jpg"
+                                                          class="img-responsive"></div>
+                        <div class="panel-body">
+                            <p class="lead"> Social Good </p>
+
+                            <p> 1,200 Followers, 83 Posts </p>
+
+                            <p>
+                                <img src="https://lh6.googleusercontent.com/-5cTTMHjjnzs/AAAAAAAAAAI/AAAAAAAAAFk/vgza68M4p2s/s28-c-k-no/photo.jpg"
+                                     width="28px" height="28px"> <img
+                                    src="https://lh4.googleusercontent.com/-6aFMDiaLg5M/AAAAAAAAAAI/AAAAAAAABdM/XjnG8z60Ug0/s28-c-k-no/photo.jpg"
+                                    width="28px" height="28px"> <img
+                                    src="https://lh4.googleusercontent.com/-9Yw2jNffJlE/AAAAAAAAAAI/AAAAAAAAAAA/u3WcFXvK-g8/s28-c-k-no/photo.jpg"
+                                    width="28px" height="28px"></p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-6">
-                <p>
-                    <span class="pull-right">TG31©Copyright 2013</span>
-                </p>
+            <div class="row" id="footer">
+                <div class="col-sm-6"></div>
+                <div class="col-sm-6">
+                    <p><span class="pull-right">TG31©Copyright 2013</span></p>
+                </div>
             </div>
         </div>
+        <!-- /col-9 -->
     </div>
-    <!-- /col-9 -->
-</div>
-<!-- /padding -->
+    <!-- /padding -->
 </div>
 <!-- /main -->
 </div>
 </div>
 </div>
+
 <!--post modal-->
 <div id="postModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog">
@@ -257,7 +278,8 @@
             <div class="modal-body">
                 <form class="form center-block">
                     <div class="form-group">
-                        <textarea class="form-control input-lg" autofocus="" placeholder="What do you want to share?"></textarea>
+                        <textarea class="form-control input-lg" autofocus
+                                  placeholder="What do you want to share?"></textarea>
                     </div>
                 </form>
             </div>
@@ -275,15 +297,8 @@
     </div>
 </div>
 
-<!-- bottom nav -->
-<div class="navbar navbar-color navbar-fixed-bottom">
-    <div class="container">
-        xx
-    </div>
-</div>
-<!-- /bottom nav -->
-
 <!--js set-->
+
 <script data-main="js/app/core" src="js/lib/require.js"></script>
 </body>
 </html>

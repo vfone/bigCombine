@@ -10,9 +10,9 @@ define(function (require) {
 
     $(function () {
         //controller.render(lib.getBody());
-        //utli.yell("sth");
         nav.offCanvasNav();
         nav.autoToggleNavbar();
-        nav.fancyFooterNav();
+        //once createMeny called, scroll() doesn't work on fly
+        nav.createMeny();
     });
 });

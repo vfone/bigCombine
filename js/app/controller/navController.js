@@ -5,7 +5,10 @@
  author: Vito Tang
  requires: jquery
  */
-define(['jquery'], function($) {
+
+
+
+define(['jquery', 'meny'], function($) {
     $.fn.clickToggle = function(func1, func2) {
         var funcs = [func1, func2];
         this.data('toggleclicked', 0);
@@ -22,7 +25,7 @@ define(['jquery'], function($) {
             $('[data-toggle=offcanvas]').clickToggle(
                 function() {
                 $('.row-offcanvas-right').animate({
-                    right: "85%"
+                    right: "55%"
                 }, 200, function() {
                     $('.row-offcanvas-right').addClass('active');
                     $('.sidebar-offcanvas').addClass('show');
@@ -41,6 +44,11 @@ define(['jquery'], function($) {
                         $('.row-offcanvas-right').removeClass('active');
                         $('.sidebar-offcanvas').removeClass('show');
                     });
+                    $('.row-offcanvas-right .sidebar-offcanvas').animate({
+                        right: "0%"
+                    }, 200, function() {
+
+                    });
                 }
             );
         },
@@ -57,11 +65,11 @@ define(['jquery'], function($) {
                 {
                     $('.navbar-fixed-top').stop().animate({
                         opacity: "0"
-                    }, 200, function() {});
+                    }, 100, function() {});
 
                     $('.navbar-fixed-bottom').stop().animate({
                         opacity: "0"
-                    }, 200, function() {});
+                    }, 100, function() {});
                     currentpotion = $(this).scrollTop();
                 }
                 //page scroll up or page reaches top or bottom
@@ -69,16 +77,43 @@ define(['jquery'], function($) {
                 {
                     $('.navbar-fixed-top').stop().animate({
                         opacity: "1"
-                    }, 200, function() {});
+                    }, 100, function() {});
                     $('.navbar-fixed-bottom').stop().animate({
                         opacity: "1"
-                    }, 200, function() {});
+                    }, 100, function() {});
                     currentpotion = $(this).scrollTop();
                 }
             })
         },
-        fancyFooterNav: function(){
+        createMeny: function(){
             //TODO: fancy footer nav
+            var meny = Meny.create({
+                // The element that will be animated in from off screen
+                menuElement: document.querySelector( '.meny' ),
+
+                // The contents that gets pushed aside while Meny is active
+                contentsElement: document.querySelector( '.wrapper' ),
+
+                // [optional] The alignment of the menu (top/right/bottom/left)
+                position: Meny.getQuery().p || 'left',
+
+                // [optional] The height of the menu (when using top/bottom position)
+                height: $("#canvas").height(),
+
+                // [optional] The width of the menu (when using left/right position)
+                //width: 260,
+
+                // [optional] Distance from mouse (in pixels) when menu should open
+                threshold: 20,
+
+                // [optional] Use mouse movement to automatically open/close
+                mouse: true,
+
+                // [optional] Use touch swipe events to open/close
+                touch: true
+            });
+
+
         }
     }
 });
